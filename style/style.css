@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-shadow: border-box;
+}
+/*--------------------------------------------
+ navigation bar
+  ------------------------------- */
+  .nav-list{
+    background: navy;
+    box-shadow: 0px 0px 10px #f0f7f8;
+    margin: 0;
+    padding:1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 2rem;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #f0f7f8;
+   
+}
+.nav-item a:hover{
+    color: #6aeeb5;
+}
+
+.nav-item:first-child{
+    margin-right: auto;
+    margin-left: 2rem;
+}
+.btn-primary{
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    background:#6aeeb5;
+    cursor: pointer;
+}
+/* --------------------------------
+ end navigation
+
+ */
+.container{
+    display: flex;
+    background:navy;
+    width:100%;
+ 
+
+}
+.right-side , .left-side{
+    width: 50%;
+}
+.right-side h1{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size:64px;
+    line-height: 80px;
+   margin-top: 20px;
+   margin-left: 120px;
+   margin-bottom: 10px;
+   
+}
+.watch-btn{
+    text-decoration: none;
+    background-image: linear-gradient(#E02C6D,#E02C6D);
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight:500px;
+    margin-left: 120px;
+    margin-top: 27px;
+    border: 1px solid black;
+}
+.left-side img{
+    height: 438px;
+    width: 556px;
+    margin-top: 15px;
+
+}
+.left-side img:hover{
+    transform: rotate(20deg);
+    transition: 4s;
+}
+.left-side img::before{
+    transform: rotate(20deg);
+    transition: 4s;
+}
+ /*--------------------------------------------------------
+  artical section 
+  --------------------------------------------------------*/
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top:70px;
+    grid-row-gap: 30px;
+}
+.player{
+    box-shadow: 0 0 3px rgb(0, 0, 0,0.1);
+    padding: 15px;
+}
+.player-img img{
+    width: 300px;
+    height: 256px;
+
+}
+.player-detail h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    padding-top:16px;
+}
+.player-detail p{
+    position: static;
+    width: 300px;
+    left: calc(50% - 300px/2);
+    top: 32.47%;
+    bottom: 0%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+.line-size{
+    width:100%;
+    height:2px solid #0000;
+
+}
+/* Artical Fifa  */
+.artical-title{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size:30px;
+}
+.artical-sub-title{
+    column-span: all;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+.artical-of-football{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    column-count: 3;
+    --webkit-column-count:3;
+    --moz-column-count: 3;
+    column-width: 250px;
+    --webkit-column-width:3;
+    --moz-column-width: 3;
+    columns: 3 250px;
+    --webkit-column:3;
+    --moz-column: 3;
+    column-gap: 30px;
+    --webkit-columns-gap:3;
+    --moz-columns-gap: 3;
+    padding:15px;
+    /* customize colums  */
+    column-rule-width:2px ;
+    column-rule-style:solid ;
+    column-rule-color:green ;
+    /* colums roul  */
+    column-rule:1px solid blue;
+    --webkit-columns-rule:3;
+    --moz-columns-rule: 3;
+
+}
+/* Contact From */
+.from-container{
+    display: flex;
+    margin-top: 90px;
+}
+ form {
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:60px;
+    margin: 12px auto;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    position:relative;
+    z-index:1;
+  }
+  
+  form > div{
+    position:absolute;
+    top:0;
+    left:50%;
+    padding:0 20px;
+    transform:translate(-50%,-50%);
+    background-color:black;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    text-align:center;
+  }
+  
+  form > div > img{
+    filter:invert(1);
+    width:100px;
+  }
+  
+  form > input,
+  form > textarea {
+    padding: 12px;
+    margin: 12px auto;
+    border: 1px solid #ccc;
+    color: #ddd;
+    background-color: #222;
+    border-radius: 4px;
+    display: block;
+    width: 70vw;
+  }
+  
+  form > textarea{
+    height:100px;
+    resize:none;
+  }
+  
+  form > input[type="submit"] {
+    max-width: 20vw;
+    padding-left: 1%;
+    padding-right: 1%;
+    cursor: pointer;
+    transition: 0.35s;
+  }
+  
+  form > input[type="submit"]:hover {
+    background-color: #555;
+  }
+
+/* Footer Design */
+footer{
+    height:auto;
+    width:100vh;
+    padding-top:40px;
+}
+.footer-content{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.content-img{
+    height:70px;
+}
+.footer-content-icon img{
+    height:32px;
+    width: 32px;
+}
+
+
+ /*__________ Mobile Device _______________ */
+ @media only screen and (max-width:688px){
+    .container{
+        display: grid;
+        background:navy;
+        width:100%;
+        height:100%;
+        grid-template-columns: repeat(1,1fr);
+        
+          
+    }
+    .right-side , .left-side{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    h1{
+        text-align: center;
+    }
+    .right-side h1{
+        font-size:30px;
+        line-height: 30px;
+        margin-left: 0;
+        margin-bottom: 0;
+
+    }
+    .watch-btn{
+        text-align: center;
+        font-weight:300px;
+        margin-left: 0px;
+        margin-top: 28px;
+        border: 1px solid black;
+    }
+    .left-side img{
+        height: 230px;
+         width: 100%;
+         margin-top: 80px;}
+
+         /* artical section working */
+         .players{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin-top:70px;
+            grid-row-gap: 30px;
+        }
+       /* Footer */
+       .footer-content{
+           display: flex;
+           margin-left: 0;
+           margin-right: 0;
+       }
+        
+ }
+ /* tablet screen  */
+ @media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        display: flex;
+        background: navy;
+        width: 100%;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        
+          
+    }
+    .right-side , .left-side{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    h1{
+        text-align: center;
+    }
+    .right-side h1{
+        font-size:30px;
+        line-height: 30px;
+        margin-left: 0;
+        margin-bottom: 0;
+
+    }
+    .watch-btn{
+        text-align: center;
+        font-weight:300px;
+        margin-left: 0px;
+        margin-top: 28px;
+        border: 1px solid black;
+    }
+    .left-side img{
+        height: 230px;
+         width: 100%;
+         margin-top: 80px;}
+         /* artical section working */
+         .players{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-top:70px;
+            grid-row-gap: 30px;
+        }
+        /* Footer */
+       .footer-content{
+        display: flex;
+        margin-left: 0;
+        margin-right: 300px;
+    }
+ }
